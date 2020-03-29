@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Quizzes</string>
+
+    <string name="quiz_question">Question</string>
+    <string name="quiz_question_details">Enter the questions</string>
+    <string name="quiz_answer">Answer</string>
+
 </resources>

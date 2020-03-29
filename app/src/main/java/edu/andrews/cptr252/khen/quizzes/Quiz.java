@@ -8,15 +8,15 @@ import java.util.UUID;
 
 public class Quiz {
     private UUID qId;
+    private String qTitle;
+    private String mDescription;
+
+
     private static final String JSON_ID = "id";
     /** JSON attribute for bug title */
     private static final String JSON_TITLE = "title";
-    /** JSON attribute for bug description */
-    private static final String JSON_DESCRIPTION = "description";
-    /** JSON attribute for bug date */
-    private static final String JSON_DATE = "date";
-    /** JSON attribute for bug solved status */
-    private static final String JSON_SOLVED = "solved";
+    /** Question of Quiz */
+
 
     /**
      * Create a new bug
@@ -25,9 +25,22 @@ public class Quiz {
         //Generate unique identifier for a new bug
         qId = UUID.randomUUID();
     }
-    public Quiz(JSONObject json) throws JSONException {
-        qId = UUID.fromString(json.getString(JSON_ID));
-
+    /**
+     * return unique id for Quiz
+     * @return Quiz id
+     */
+    public String getTitle(){
+        return qTitle;
     }
+    /**
+     * Set new title for quiz
+     * @param title New title
+     */
+    public void setTitle(String title){
+        qTitle = title;
+    }
+    public String getDescription(){return mDescription; }
+    public void setDescription(String description) { mDescription = description; }
+
 
 }
