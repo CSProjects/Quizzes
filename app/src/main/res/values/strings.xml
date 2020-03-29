@@ -4,5 +4,6 @@
     <string name="quiz_question">Question</string>
     <string name="quiz_question_details">Enter the questions</string>
     <string name="quiz_answer">Answer</string>
+    <string name="quiz_list_label">Questions</string>
 
 </resources>
